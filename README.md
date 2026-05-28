@@ -11,9 +11,7 @@ REG NO :212224100018
 To fit poisson distribution for the arrival of objects per minute from the feeder
 
 # Software required :  
-
 Python and Visual component tool
-
 # Theory:
 
 The Poisson distribution is the discrete probability distribution of the number of events occurring in a given time period, given the average number of times the event occurs over that time period.
@@ -53,6 +51,7 @@ else:
     print("Not Fit")
 ```
 # Output : 
+
 <img width="1378" height="302" alt="image" src="https://github.com/user-attachments/assets/34094998-3647-41e1-916f-37d3046c1eb5" />
 # Results
 
