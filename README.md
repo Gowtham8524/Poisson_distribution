@@ -32,39 +32,27 @@ The Poisson distribution is the discrete probability distribution of the number 
 ```
 import math
 from scipy.stats import chi2
-
 data = list(map(int, input("Enter data: ").split()))
 N = len(data)
-
 max_x = max(data)
 obs = [data.count(x) for x in range(max_x + 1)]
-
 mean = sum(x * obs[x] for x in range(len(obs))) / N
-
 chi_sq = 0
-
 print("x  Obs  Exp")
-
 for x in range(len(obs)):
     p = math.exp(-mean) * (mean ** x) / math.factorial(x)
     exp = N * p
-    
     if exp > 0:
         chi_sq += (obs[x] - exp) ** 2 / exp
-    
     print(x, obs[x], round(exp, 2))
-
 df = max_x - 1
 critical = chi2.ppf(0.99, df)
-
 print("\nChi-square =", round(chi_sq, 2))
 print("Critical =", round(critical, 2))
-
 if chi_sq < critical:
     print("Fits Poisson")
 else:
     print("Not Fit")
- 
 ```
 # Output : 
 
