@@ -1,4 +1,11 @@
 # Fitting Poisson  distribution
+EXP NO :02
+
+DATE   :27/04/2026 
+
+NAME   :Gowtham S
+
+REG NO :212224100018
 # Aim : 
 
 To fit poisson distribution for the arrival of objects per minute from the feeder
@@ -24,9 +31,7 @@ The Poisson distribution is the discrete probability distribution of the number 
 
 ![image](https://user-images.githubusercontent.com/104613195/166251988-d0c53205-6080-4f7b-ae4c-398178586637.png)
 
-# Experiment :
 
-![image](https://user-images.githubusercontent.com/103921593/230282876-f4a5afbf-cac1-4648-a1b0-c78840638a8e.png)
 
 # Program :
 ```
@@ -74,4 +79,8 @@ else:
 # Results
 
 The Poisson distribution is fitted for the objects arrived from feeder per minute and the data is tested using Chi-square test. 
+
+# link:
+https://github.com/Gowtham8524/Poisson_distribution
+
  
